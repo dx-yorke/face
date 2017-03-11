@@ -1,0 +1,27 @@
+{
+  "name": "facelib",
+  "authors": [
+    "alexyorke <yorkbc2@gmail.com>"
+  ],
+  "description": "The lib for a really comfortable coding in front-end development. Columns, lines, buttons and more",
+  "main": "facelib.css",
+  "keywords": [
+    "face",
+    "design",
+    "front-end",
+    "facelib",
+    "css",
+    "material",
+    "notmaterial",
+    "colors"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

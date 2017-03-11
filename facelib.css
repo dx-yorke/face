@@ -1,0 +1,604 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+/*
+	Authors: Alex Yorke and Ann Yorke;
+	Name: -___-;
+	eMail: <yorkbc2@gmail.com> || <doublex00@urk.net> || <durt2701@gmail.com>;
+*/
+
+/*Normalized Styles*/
+
+html {
+  font-family: sans-serif; 
+  line-height: 1.15; 
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+dfn {
+  font-style: italic;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif; 
+  font-size: 100%; 
+  line-height: 1.15; 
+  margin: 0; 
+}
+
+/* Colors list for global usage	*/
+
+:root {
+	--red : #F44336;
+	--blue : #2196F3;
+	--dark-blue: #1565c0;
+	--darkest-blue: #0d47a1;
+	--g-blue: #607D8B;
+	--yellow: #FFEB3B;
+	--brown: #795548;
+	--maroon: #E91E63;
+	--purple: #9261E8;
+	--gr-blue: #009688;
+	--orange: #FF5722;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto Slab", serif;
+}
+
+.line {
+	width: 100%;
+	position: relative;
+	display: block;
+	padding: 5px 0;
+	text-align: center;
+	font-size: 24px;
+	color: #000;
+	background-color: #fff;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+}
+
+/* Lines list with color: #fff;	*/
+
+.line.red,
+.line.blue,
+.line.orange,
+.line.green-blue,
+.line.purple,
+.line.maroon,
+.line.brown,
+.line.grey-blue,
+.line.black {
+	color: #fff;
+	text-shadow: 0px 0px 1px #000;
+}
+
+/*
+	Full list of lines 
+*/
+
+.line.red {
+	background-color: #F44336;
+}
+
+.line.blue {
+	background-color: #2196F3;
+}
+
+.line.orange {
+	background-color: #FF5722;
+}
+
+.line.green-blue {
+	background-color: #009688;
+}
+
+.line.purple {
+	background-color: #9261E8;
+}
+
+.line.maroon {
+	background-color: #E91E63;
+}
+
+.line.brown {
+	background-color: #795548;
+}
+
+.line.yellow {
+	background-color: #FFEB3B;
+}
+
+.line.grey-blue {
+	background-color: #607D8B;
+}
+
+.line.black {
+	background-color: #000;
+}
+
+
+/*
+	Columns with adaptive 
+*/
+
+
+/*
+	Column contianer for a good work with columns 
+*/
+.col-container {
+	position: relative;
+	min-height: 1px;
+	overflow: hidden;
+	margin: 0 15px;
+	padding: 0;
+}
+/*Column config*/
+.col {
+	float: left;
+	min-height: 1px
+}
+/*Non adaptive columns*/
+.col.num1 {
+	width: 8.333333333%;
+}
+.col.num2 {
+	width: 16.66666666667%;;
+}
+.col.num3 {
+	width: 25%;
+}
+.col.num4 {
+	width: 33.3333333%;
+}
+.col.num5 {
+	width: 41.66666666667%;
+}
+.col.num6 {
+	width: 50%;
+}
+.col.num7 {
+	width: 58.333333333%;
+}
+.col.num8 {
+	width: 66.66666666667%;
+}
+.col.num9 {
+	width: 75%;
+}
+.col.num10 {
+	width: 83.3333333333%;;
+}
+.col.num11 {
+	width: 91.66666667%;
+}
+.col.num12 {
+	width: 100%;
+}
+
+/*Non adaptive offsets*/
+.col.off1 {
+	margin-left: 8.333333333%;
+}
+.col.off2 {
+	margin-left: 16.66666666667%;;
+}
+.col.off3 {
+	margin-left: 25%;
+}
+.col.off4 {
+	margin-left: 33.3333333%;
+}
+.col.off5 {
+	margin-left: 41.66666666667%;
+}
+.col.off6 {
+	margin-left: 50%;
+}
+.col.off7 {
+	margin-left: 58.333333333%;
+}
+.col.off8 {
+	margin-left: 66.66666666667%;
+}
+.col.off9 {
+	margin-left: 75%;
+}
+.col.off10 {
+	margin-left: 83.3333333333%;;
+}
+.col.off11 {
+	margin-left: 91.66666667%;
+}
+.col.off12 {
+	margin-left: 100%;
+}
+
+/*Adaptive columns*/
+
+/*Columns and offsets for large screens*/
+@media screen and (min-width: 1280px) {
+	.col.lg1 {
+		width: 8.333333333%;
+	}
+	.col.lg2 {
+		width: 16.66666666667%;;
+	}
+	.col.lg3 {
+		width: 25%;
+	}
+	.col.lg4 {
+		width: 33.3333333%;
+	}
+	.col.lg5 {
+		width: 41.66666666667%;
+	}
+	.col.lg6 {
+		width: 50%;
+	}
+	.col.lg7 {
+		width: 58.333333333%;
+	}
+	.col.lg8 {
+		width: 66.66666666667%;
+	}
+	.col.lg9 {
+		width: 75%;
+	}
+	.col.lg10 {
+		width: 83.3333333333%;;
+	}
+	.col.lg11 {
+		width: 91.66666667%;
+	}
+	.col.lg12 {
+		width: 100%;
+	}
+	/*Offsets*/
+	.col.offlg1 {
+		margin-left: 8.333333333%;
+	}
+	.col.offlg2 {
+		margin-left: 16.66666666667%;;
+	}
+	.col.offlg3 {
+		margin-left: 25%;
+	}
+	.col.offlg4 {
+		margin-left: 33.3333333%;
+	}
+	.col.offlg5 {
+		margin-left: 41.66666666667%;
+	}
+	.col.offlg6 {
+		margin-left: 50%;
+	}
+	.col.offlg7 {
+		margin-left: 58.333333333%;
+	}
+	.col.offlg8 {
+		margin-left: 66.66666666667%;
+	}
+	.col.offlg9 {
+		margin-left: 75%;
+	}
+	.col.offlg10 {
+		margin-left: 83.3333333333%;;
+	}
+	.col.offlg11 {
+		margin-left: 91.66666667%;
+	}
+	.col.offlg12 {
+		margin-left: 100%;
+	}
+}
+/*Columns and offsets for medium screens*/
+@media screen and (max-width: 1280px) {
+	.col.md1 {
+		width: 8.333333333%;
+	}
+	.col.md2 {
+		width: 16.66666666667%;;
+	}
+	.col.md3 {
+		width: 25%;
+	}
+	.col.md4 {
+		width: 33.3333333%;
+	}
+	.col.md5 {
+		width: 41.66666666667%;
+	}
+	.col.md6 {
+		width: 50%;
+	}
+	.col.md7 {
+		width: 58.333333333%;
+	}
+	.col.md8 {
+		width: 66.66666666667%;
+	}
+	.col.md9 {
+		width: 75%;
+	}
+	.col.md10 {
+		width: 83.3333333333%;;
+	}
+	.col.md11{
+		width: 91.66666667%;
+	}
+	.col.md12{
+		width: 100%;
+	}
+	/*Offsets*/
+	.col.offmd1 {
+		margin-left: 8.333333333%;
+	}
+	.col.offmd2 {
+		margin-left: 16.66666666667%;;
+	}
+	.col.offmd3 {
+		margin-left: 25%;
+	}
+	.col.offmd4 {
+		margin-left: 33.3333333%;
+	}
+	.col.offmd5 {
+		margin-left: 41.66666666667%;
+	}
+	.col.offmd6 {
+		margin-left: 50%;
+	}
+	.col.offmd7 {
+		margin-left: 58.333333333%;
+	}
+	.col.offmd8 {
+		margin-left: 66.66666666667%;
+	}
+	.col.offmd9 {
+		margin-left: 75%;
+	}
+	.col.offmd10 {
+		margin-left: 83.3333333333%;;
+	}
+	.col.offmd11 {
+		margin-left: 91.66666667%;
+	}
+	.col.offmd12 {
+		margin-left: 100%;
+	}
+}
+/*Columns and offsets for smartphones and ipads*/
+@media screen and (max-width: 720px) {
+	.col.sm1 {
+		width: 8.333333333%;
+	}
+	.col.sm2 {
+		width: 16.66666666667%;;
+	}
+	.col.sm3 {
+		width: 25%;
+	}
+	.col.sm4 {
+		width: 33.3333333%;
+	}
+	.col.sm5 {
+		width: 41.66666666667%;
+	}
+	.col.sm6 {
+		width: 50%;
+	}
+	.col.sm7 {
+		width: 58.333333333%;
+	}
+	.col.sm8 {
+		width: 66.66666666667%;
+	}
+	.col.sm9 {
+		width: 75%;
+	}
+	.col.sm10 {
+		width: 83.3333333333%;;
+	}
+	.col.sm11 {
+		width 91.66666667%;
+	}
+	.col.sm12 {
+		width 100%;
+	}
+	/*Offsets*/
+	.col.offsm1 {
+		margin-left: 8.333333333%;
+	}
+	.col.offsm2 {
+		margin-left: 16.66666666667%;;
+	}
+	.col.offsm3 {
+		margin-left: 25%;
+	}
+	.col.offsm4 {
+		margin-left: 33.3333333%;
+	}
+	.col.offsm5 {
+		margin-left: 41.66666666667%;
+	}
+	.col.offsm6 {
+		margin-left: 50%;
+	}
+	.col.offsm7 {
+		margin-left: 58.333333333%;
+	}
+	.col.offsm8 {
+		margin-left: 66.66666666667%;
+	}
+	.col.offsm9 {
+		margin-left: 75%;
+	}
+	.col.offsm10 {
+		margin-left: 83.3333333333%;;
+	}
+	.col.offsm11 {
+		margin-left: 91.66666667%;
+	}
+	.col.offsm12 {
+		margin-left: 100%;
+	}
+}
+/*Columns and offsets for very small screens (Nokia 3110)*/
+@media screen and (max-width: 480px) {
+	.col.xs1 {
+		width: 8.333333333%;
+	}
+	.col.xs2 {
+		width: 16.66666666667%;;
+	}
+	.col.xs3 {
+		width: 25%;
+	}
+	.col.xs4 {
+		width: 33.3333333%;
+	}
+	.col.xs5 {
+		width: 41.66666666667%;
+	}
+	.col.xs6 {
+		width: 50%;
+	}
+	.col.xs7 {
+		width: 58.333333333%;
+	}
+	.col.xs8 {
+		width: 66.66666666667%;
+	}
+	.col.xs9 {
+		width: 75%;
+	}
+	.col.xs10 {
+		width: 83.3333333333%;;
+	}
+	.col.xs11 {
+		width: 91.66666667%;
+	}
+	.col.xs12 {
+		width: 100%;
+	}
+
+	/*Offsets*/
+	.col.offxs1 {
+		margin-left: 8.333333333%;
+	}
+	.col.offxs2 {
+		margin-left: 16.66666666667%;;
+	}
+	.col.offxs3 {
+		margin-left: 25%;
+	}
+	.col.offxs4 {
+		margin-left: 33.3333333%;
+	}
+	.col.offxs5 {
+		margin-left: 41.66666666667%;
+	}
+	.col.offxs6 {
+		margin-left: 50%;
+	}
+	.col.offxs7 {
+		margin-left: 58.333333333%;
+	}
+	.col.offxs8 {
+		margin-left: 66.66666666667%;
+	}
+	.col.offxs9 {
+		margin-left: 75%;
+	}
+	.col.offxs10 {
+		margin-left: 83.3333333333%;;
+	}
+	.col.offxs11 {
+		margin-left: 91.66666667%;
+	}
+	.col.offxs12 {
+		margin-left: 100%;
+	}
+}
+
+/*Links styling and normalize*/
+
+a {
+	color: var(--blue);
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+	color: var(--dark-blue);
+}
+
+a:visited {
+	color: var(--dark-blue);
+}
+a:visited:active {
+	color: var(--darkest-blue);
+}
